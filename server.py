@@ -6,4 +6,4 @@ from mcp.server.fastmcp import FastMCP
 atexit.register(tf.close_project)
 
 # This is the shared MCP server instance
-mcp = FastMCP("tia_mcp_server")
+mcp = FastMCP(name="tia_mcp_server", log_level="DEBUG")
