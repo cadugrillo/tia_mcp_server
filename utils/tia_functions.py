@@ -1,4 +1,3 @@
-import json
 import tia_portal.config as tia_config
 from tia_portal import Client, Project
 
