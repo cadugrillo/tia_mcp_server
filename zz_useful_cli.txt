@@ -1,0 +1,11 @@
+MCP Server at: "http://localhost:8001/mcp"
+
+npx @modelcontextprotocol/inspector
+
+
+docker run -p 8000:8000 \
+--name=tia-mcp-server \
+--pid=host \
+cadugrillo/tia-mcp-server:0.1
+
+docker run -p 8000:8000 -e FASTMCP_HOST=0.0.0.0 -v C:\'Program Files'\Siemens\Automation\'Portal V20'\PublicAPI\V20:/PublicAPI --name=tia-mcp-server cadugrillo/tia-mcp-server:0.1

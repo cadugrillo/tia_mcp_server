@@ -216,7 +216,7 @@ wheels = [
 
 [[package]]
 name = "mcp"
-version = "1.14.1"
+version = "1.12.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anyio" },
@@ -231,9 +231,9 @@ dependencies = [
     { name = "starlette" },
     { name = "uvicorn", marker = "sys_platform != 'emscripten'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/48/e9/242096400d702924b49f8d202c6ded7efb8841cacba826b5d2e6183aef7b/mcp-1.14.1.tar.gz", hash = "sha256:31c4406182ba15e8f30a513042719c3f0a38c615e76188ee5a736aaa89e20134", size = 454944, upload-time = "2025-09-18T13:37:19.971Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/66/85/f36d538b1286b7758f35c1b69d93f2719d2df90c01bd074eadd35f6afc35/mcp-1.12.2.tar.gz", hash = "sha256:a4b7c742c50ce6ed6d6a6c096cca0e3893f5aecc89a59ed06d47c4e6ba41edcc", size = 426202, upload-time = "2025-07-24T18:29:05.175Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/8e/11/d334fbb7c2aeddd2e762b86d7a619acffae012643a5738e698f975a2a9e2/mcp-1.14.1-py3-none-any.whl", hash = "sha256:3b7a479e8e5cbf5361bdc1da8bc6d500d795dc3aff44b44077a363a7f7e945a4", size = 163809, upload-time = "2025-09-18T13:37:18.165Z" },
+    { url = "https://files.pythonhosted.org/packages/2f/cf/3fd38cfe43962452e4bfadc6966b2ea0afaf8e0286cb3991c247c8c33ebd/mcp-1.12.2-py3-none-any.whl", hash = "sha256:b86d584bb60193a42bd78aef01882c5c42d614e416cbf0480149839377ab5a5f", size = 158473, upload-time = "2025-07-24T18:29:03.419Z" },
 ]
 
 [package.optional-dependencies]
@@ -514,14 +514,14 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "mcp", extras = ["cli"], specifier = ">=1.14.1" },
-    { name = "tia-openness-api-client", directory = "../tia-openness-api-client" },
+    { name = "mcp", extras = ["cli"], specifier = "==1.12.2" },
+    { name = "tia-openness-api-client", directory = "lib/tia-openness-api-client" },
 ]
 
 [[package]]
 name = "tia-openness-api-client"
 version = "0.1.0"
-source = { directory = "../tia-openness-api-client" }
+source = { directory = "lib/tia-openness-api-client" }
 dependencies = [
     { name = "pythonnet" },
 ]

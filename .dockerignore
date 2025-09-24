@@ -1,0 +1,42 @@
+# Python-specific files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+env/
+.env/
+
+# Editor/IDE specific files
+.vscode/
+.idea/
+*.swp
+*.bak
+*.swo
+
+# Version control
+.git/
+.gitignore
+.hg/
+.hgignore
+.svn/
+
+# Build artifacts and temporary files
+dist/
+build/
+*.egg-info/
+.coverage
+.mypy_cache/
+.pytest_cache/
+htmlcov/
+tmp/
+logs/
+*.log
+*.sqlite3 # Or other database files if not intended for the image
+
+# Docker-specific files (often kept in the root, but good to explicitly ignore if not needed)
+Dockerfile
+docker-compose.yml
+README.md
